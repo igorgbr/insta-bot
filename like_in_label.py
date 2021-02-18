@@ -1,31 +1,23 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+
 from selenium.common.exceptions import NoSuchElementException
-from helper import PASSWORD, LOGIN, DRIVER_PATH, cor_terminal
+from helper import DRIVER_PATH, cor_terminal
+from connection import connection
 
 # -------------------------------------LOGIN---------------------------------------
 driver = webdriver.Chrome(
     executable_path=DRIVER_PATH)
-driver.get("http://www.instagram.com.br")
-
-driver.implicitly_wait(3)
-driver.find_element_by_name('username').send_keys(LOGIN)
-driver.find_element_by_name('password').send_keys(PASSWORD)
-driver.find_element_by_name('password').send_keys(Keys.RETURN)
-
-
-driver.find_element_by_xpath("//button[text()='Agora não']").click()
-driver.find_element_by_class_name('cq2ai').click()
+connection(driver)
 
 # ----------------------------------------------------------------------
-driver.get('https://www.instagram.com/ocodetop/')
-
+user = 'matheusfc.dev'
+driver.get(f'https://www.instagram.com/{user}/')
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
 
-# ----- recebe um lista com a classe das imagens -------------
-# lista_imagens = driver.find_elements_by_class_name('_9AhH0')
-# print(lista_imagens)
-driver.implicitly_wait(1)
+
+driver.implicitly_wait(0.5)
+
+# ------------------------ like comments and posts ----------------------------
 for i in range(1, 50):
     like_elements = driver.find_elements_by_css_selector(
         "[aria-label='Curtir']")
@@ -63,3 +55,9 @@ for i in range(1, 50):
                 "[aria-label='Fechar']").click()
             driver.quit()
             break
+
+
+
+# ----- recebe um lista com a classe das imagens -------------
+# lista_imagens = driver.find_elements_by_class_name('_9AhH0')
+# print(lista_imagens)
