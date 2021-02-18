@@ -8,7 +8,8 @@ driver = webdriver.Chrome(
 connection(driver)
 
 # ----------------------------------------------------------------------
-driver.get('https://www.instagram.com/explore/tags/programação/')
+hashtag = 'programação'
+driver.get('https://www.instagram.com/explore/tags/{hashtag}/')
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
 
 
