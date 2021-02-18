@@ -1,10 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from data_login import PASSWORD, LOGIN, DRIVER_PATH
+from selenium.common.exceptions import NoSuchElementException
+from helper import PASSWORD, LOGIN, DRIVER_PATH, cor_terminal
 
 # -------------------------------------LOGIN---------------------------------------
 driver = webdriver.Chrome(
@@ -21,27 +18,48 @@ driver.find_element_by_xpath("//button[text()='Agora não']").click()
 driver.find_element_by_class_name('cq2ai').click()
 
 # ----------------------------------------------------------------------
-driver.get('https://www.instagram.com/velocidadecode/')
+driver.get('https://www.instagram.com/ocodetop/')
 
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
 
 # ----- recebe um lista com a classe das imagens -------------
 # lista_imagens = driver.find_elements_by_class_name('_9AhH0')
 # print(lista_imagens)
-driver.implicitly_wait(0.5)
-for i in range(50):
+driver.implicitly_wait(1)
+for i in range(1, 50):
     like_elements = driver.find_elements_by_css_selector(
         "[aria-label='Curtir']")
 
     if not like_elements:
-        print(f'post {i} - tem like')
-        driver.find_element_by_class_name('_65Bje').click()
+        print(
+            f'{cor_terminal["red"]}post {i} - tem like{cor_terminal["clean"]}')
+
+        try:
+            next_button = driver.find_element_by_class_name('_65Bje')
+            next_button.click()
+        except NoSuchElementException:
+            print("end")
+            driver.find_element_by_css_selector(
+                "[aria-label='Fechar']").click()
+            driver.quit()
+            break
+
     else:
-        print(f'post {i} - não tinha like')
-        count = 0
+        print(
+            f'{cor_terminal["green"]} post {i} - não tinha like{cor_terminal["clean"]}')
+        count = 1
         for like in like_elements:
             like.click()
-            print(f'{count} - likes dentro do post {i}')
+            print(
+                f'{cor_terminal["cyan"]}{count} likes dentro do post {i}{cor_terminal["clean"]}')
             count += 1
 
-        driver.find_element_by_class_name('_65Bje').click()
+        try:
+            next_button = driver.find_element_by_class_name('_65Bje')
+            next_button.click()
+        except NoSuchElementException:
+            print("end")
+            driver.find_element_by_css_selector(
+                "[aria-label='Fechar']").click()
+            driver.quit()
+            break
