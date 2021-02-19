@@ -5,6 +5,7 @@ from connection import connection
 from datetime import date
 from send_message import send_msg
 from time import sleep
+from connectionBanco import insert_data
 
 # -------------------------------------LOGIN---------------------------------------
 driver = webdriver.Chrome(
@@ -12,19 +13,16 @@ driver = webdriver.Chrome(
 connection(driver)
 
 # ----------------------------------------------------------------------
-user = 'conceitu.ada'
-f = open(f"data/like_per_label/{user}.txt", "a")
+user = 'gswdatabook'
 driver.get(f'https://www.instagram.com/{user}/')
 
-try:
-    send_msg(user, driver)
-    driver.get(f'https://www.instagram.com/{user}/')
-except NoSuchElementException:
-    pass
-
+# try:
+#     send_msg(user, driver)
+#     driver.get(f'https://www.instagram.com/{user}/')
+# except NoSuchElementException:
+#     pass
 
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
-
 
 driver.implicitly_wait(0.5)
 # ------------------------ like comments and posts ----------------------------
@@ -42,19 +40,15 @@ for i in range(1, 50):
             next_button = driver.find_element_by_class_name('_65Bje')
             next_button.click()
         except NoSuchElementException:
-            print("end")
-            f.write(
-                f"\n{user} - total posts: {i} || total likes: {total_count} || Date: {today} << nao possui + posts >>")
-            f.close()
+            print("end - inserindo dados no banco")
+            insert_data(user, i, total_count)
             driver.find_element_by_css_selector(
                 "[aria-label='Fechar']").click()
             driver.quit()
             break
         except ElementClickInterceptedException:
-            print("end")
-            f.write(
-                f"\n{user} - total posts: {i} || total likes: {total_count} || Date: {today} << Interrompido por bloqueio >>")
-            f.close()
+            print("end - inserindo dados no banco")
+            insert_data(user, i, total_count)
             driver.quit()
             break
 
@@ -70,37 +64,28 @@ for i in range(1, 50):
                 count += 1
                 total_count += count
             except ElementClickInterceptedException:
-                print("end")
-                f.write(
-                    f"\n{user} - total posts: {i} || total likes: {total_count} || Date: {today} << Interrompido por bloqueio >>")
-                f.close()
+                print("end - inserindo dados no banco")
+                insert_data(user, i, total_count)
                 driver.quit()
                 break
         try:
             next_button = driver.find_element_by_class_name('_65Bje')
             next_button.click()
         except NoSuchElementException:
-            print("end")
-            f.write(
-                f"\n{user} - total posts: {i} || total likes: {total_count} || Date: {today} << nao possui + posts >>")
-            f.close()
+            print("end - inserindo dados no banco")
+            insert_data(user, i, total_count)
             print(
                 f'{cor_terminal["red"]}Não possui mais posts!{cor_terminal["clean"]}')
-            # driver.find_element_by_css_selector(
-            #     "[aria-label='Fechar']").click()
             driver.quit()
             break
         except ElementClickInterceptedException:
-            print("end")
-            f.write(
-                f"\n{user} - total posts: {i} || total likes: {total_count} || Date: {today} << Interrompido por bloqueio >>")
-            f.close()
+            print("end - inserindo dados no banco")
+            insert_data(user, i, total_count)
             driver.quit()
             break
 
-
-f.write(f"\n{user} - total posts: {i} || total likes: {total_count} || Date: {today} << limite de 50 >>")
-f.close()
+print("end - inserindo dados no banco")
+insert_data(user, i, total_count)
 driver.quit()
 
 # ----- recebe um lista com a classe das imagens -------------

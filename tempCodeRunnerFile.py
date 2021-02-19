@@ -1,2 +1,1 @@
-hashtag = 'tecnologia'
-# driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/')
+db.insta_bot.delete_one({'usuario': 'ms_sites'})

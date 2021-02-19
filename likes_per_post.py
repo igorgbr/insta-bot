@@ -4,6 +4,7 @@ from helper import DRIVER_PATH_CHROME, cor_terminal
 from connection import connection
 from send_message import send_msg
 from datetime import date
+from connectionBanco import insert_data
 
 driver = webdriver.Chrome(
     executable_path=DRIVER_PATH_CHROME)
@@ -13,15 +14,18 @@ connection(driver)
 # hashtag = 'tecnologia'
 # driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/')
 
-user = 'japacode'
-f = open(f"data/like_per_post/{user}.txt", "a")
+user = 'gswdatabook'
 driver.get(f'https://www.instagram.com/{user}/?hl=pt-br')
 
-# send_msg(user, driver)
-# driver.get(f'https://www.instagram.com/{user}/')
+# -----------------------envia msg---------------------------------------
+# try:
+#     send_msg(user, driver)
+#     driver.get(f'https://www.instagram.com/{user}/')
+# except NoSuchElementException:
+#     pass
+# ----------------------------------------------------------------------
 
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
-
 
 # ------------------------ like posts -----------------------------------------
 today = date.today()
@@ -38,18 +42,14 @@ for i in range(1, 400):
                 driver.find_element_by_class_name('_65Bje').click()
             except NoSuchElementException:
                 print("end")
-                f.write(
-                    f"\n{user} - total posts: {i} || Date: {today}")
-                f.close()
+                insert_data(user, i)
                 driver.close()
                 break
         else:
             try:
                 driver.find_element_by_class_name('_65Bje').click()
             except NoSuchElementException:
-                f.write(
-                    f"\n{user} - total posts: {i} || Date: {today}")
-                f.close()
+                insert_data(user, i)
                 driver.close()
                 break
 
