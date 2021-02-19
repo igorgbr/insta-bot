@@ -4,3 +4,4 @@ __pycache__
 chromedriver
 helper.py
 data
+geckodriver

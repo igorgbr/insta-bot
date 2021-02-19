@@ -1,1 +1,2 @@
-driver.implicitly_wait(1000)
+hashtag = 'tecnologia'
+# driver.get(f'https://www.instagram.com/explore/tags/{hashtag}/')
