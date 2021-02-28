@@ -1,5 +1,5 @@
 from selenium import webdriver
-from connection import connection
+from connection_driver import connection
 from helper import DRIVER_PATH_CHROME, cor_terminal
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
