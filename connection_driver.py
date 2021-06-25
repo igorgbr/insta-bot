@@ -13,7 +13,7 @@ def connection(driver):
         # response.raise_for_status()
         driver.get("http://www.instagram.com.br")
 
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(5)
         driver.find_element_by_name('username').send_keys(LOGIN)
         driver.find_element_by_name('password').send_keys(PASSWORD)
         driver.find_element_by_name('password').send_keys(Keys.RETURN)

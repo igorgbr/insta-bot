@@ -18,20 +18,20 @@ driver = webdriver.Chrome(
 connection(driver)
 
 # ----------------------------------------------------------------------
-user = 'ga.brielapinheiro'
+user = 'devprograma'
 driver.get(f'https://www.instagram.com/{user}/')
 
-try:
-    send_msg(user, driver)
-    driver.get(f'https://www.instagram.com/{user}/')
-except NoSuchElementException:
-    pass
+# try:
+#     send_msg(user, driver)
+#     driver.get(f'https://www.instagram.com/{user}/')
+# except NoSuchElementException:
+#     pass
 
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
 
 driver.implicitly_wait(0.5)
 # ------------------------ like comments and posts ----------------------------
-total_count = 0
+total_count = count = 0
 today = date.today()
 for i in range(1, 20):
     like_elements = driver.find_elements_by_css_selector(
@@ -59,7 +59,6 @@ for i in range(1, 20):
     else:
         print(
             f'{cor_terminal["green"]} post {i} - não tinha like{cor_terminal["clean"]}')
-        count = 1
         for like in like_elements:
             try:
                 like.click()  # - Clicka no like

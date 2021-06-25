@@ -9,22 +9,25 @@ class instaBot:
         self.browserProfile.add_experimental_option(
             "prefs", {"intl.accept_languages": "en,en_US"}
         )
-        self.browser = webdriver.Chrome(
+        self.driver = webdriver.Chrome(
             driver, chrome_options=self.browserProfile)
         self.email = email
         self.password = password
 
     def signIn(self):
-        self.browser.get('https://www.instagram.com/accounts/login/')
+        self.driver.get('https://www.instagram.com/accounts/login/')
         time.sleep(2)
 
-        emailInput = self.browser.find_elements_by_css_selector("form input")[
+        emailInput = self.driver.find_elements_by_css_selector("form input")[
             0]
 
-        passwordInput = self.browser.find_elements_by_css_selector("form input")[
+        passwordInput = self.driver.find_elements_by_css_selector("form input")[
             1]
 
         emailInput.send_keys(self.email)
         passwordInput.send_keys(self.password)
         passwordInput.send_keys(Keys.ENTER)
         time.sleep(2)
+
+    def exitAndClose(self):
+        self.driver.quit()
