@@ -34,3 +34,298 @@ JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError
 1613676327100	Marionette	ERROR	[15] No reply from Marionette:Register
 1613676327680	Marionette	ERROR	[31] No reply from Marionette:Register
 1613676340729	Marionette	INFO	Stopped listening on port 40265
+1613765187902	geckodriver	INFO	Listening on 127.0.0.1:58913
+1613765188900	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJHMOEf"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613765192554	Marionette	INFO	Listening on port 35025
+1613765192657	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613765192679	Marionette	ERROR	[18] No reply from Marionette:Register
+1613765198250	Marionette	ERROR	[31] No reply from Marionette:Register
+1613765206224	Marionette	INFO	Stopped listening on port 35025
+1613923083150	geckodriver	INFO	Listening on 127.0.0.1:54459
+1613923084146	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemmVhWE"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613923087474	Marionette	INFO	Listening on port 42303
+1613923087581	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613923087603	Marionette	ERROR	[15] No reply from Marionette:Register
+1613923088160	Marionette	ERROR	[31] No reply from Marionette:Register
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1613923642416	Marionette	INFO	Stopped listening on port 42303
+Invalid port. Exiting...
+Invalid port. Exiting...
+Invalid port. Exiting...
+1613923719618	geckodriver	INFO	Listening on 127.0.0.1:40483
+1613923720612	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJOF2z2"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613923723153	Marionette	INFO	Listening on port 39241
+1613923723249	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613923723267	Marionette	ERROR	[15] No reply from Marionette:Register
+1613923723813	Marionette	ERROR	[31] No reply from Marionette:Register
+1613923727701	Marionette	ERROR	[33] No reply from Marionette:Register
+1613923730117	Marionette	ERROR	[35] No reply from Marionette:Register
+1613923739711	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+[Child 12612, MediaDecoderStateMachine #1] WARNING: Decoder=7f2f25ce9400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 12612, MediaDecoderStateMachine #1] WARNING: Decoder=7f2f25bf1c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 32: cancelled: operation is cancelled
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 12612, MediaDecoderStateMachine #1] WARNING: Decoder=7f2f26827400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 12612, MediaDecoderStateMachine #1] WARNING: Decoder=7f2f26827400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+1613923821710	Marionette	INFO	Stopped listening on port 39241
+1613964520609	geckodriver	INFO	Listening on 127.0.0.1:57117
+1613964521609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFC0Cwy"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613964525496	Marionette	INFO	Listening on port 40687
+1613964525548	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613964525562	Marionette	ERROR	[15] No reply from Marionette:Register
+1613964528143	Marionette	ERROR	[31] No reply from Marionette:Register
+1613964533778	Marionette	ERROR	[33] No reply from Marionette:Register
+1613964536380	Marionette	ERROR	[35] No reply from Marionette:Register
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 569: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'PictureInPictureToggle' has been destroyed
+1613964545827	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1613964583440	Marionette	INFO	Stopped listening on port 40687
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 299: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 299: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 299: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/8c26ec779f9f.js, line 204: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/8c26ec779f9f.js, line 204: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/8c26ec779f9f.js, line 204: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0144,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xB60006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+1613964748904	geckodriver	INFO	Listening on 127.0.0.1:35271
+1613964749911	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCUh11J"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613964752689	Marionette	INFO	Listening on port 44143
+1613964752764	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613964752787	Marionette	ERROR	[15] No reply from Marionette:Register
+1613964753353	Marionette	ERROR	[31] No reply from Marionette:Register
+1613964796909	Marionette	INFO	Stopped listening on port 44143
+1613964801805	geckodriver	INFO	Listening on 127.0.0.1:37665
+1613964801810	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiH0oUF"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613964804452	Marionette	INFO	Listening on port 36607
+1613964804549	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613964804572	Marionette	ERROR	[15] No reply from Marionette:Register
+1613964810151	Marionette	ERROR	[31] No reply from Marionette:Register
+1613964813843	Marionette	ERROR	[33] No reply from Marionette:Register
+1613964816579	Marionette	ERROR	[35] No reply from Marionette:Register
+1613964827981	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9f067c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9048f800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6cf000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6cf000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6cf000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9bdc3400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9c5bdc00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf9c5bdc00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf90c50c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+[Child 32552, MediaDecoderStateMachine #1] WARNING: Decoder=7fbf8e6d1400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1613964868049	Marionette	INFO	Stopped listening on port 36607
+1613965425488	geckodriver	INFO	Listening on 127.0.0.1:34615
+1613965425492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTDgfSK"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613965428272	Marionette	INFO	Listening on port 39527
+1613965428329	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613965428352	Marionette	ERROR	[15] No reply from Marionette:Register
+1613965428900	Marionette	ERROR	[31] No reply from Marionette:Register
+1613965432630	Marionette	ERROR	[33] No reply from Marionette:Register
+1613965435187	Marionette	ERROR	[35] No reply from Marionette:Register
+1613965445335	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+[Child 33516, MediaDecoderStateMachine #1] WARNING: Decoder=7feb1e2d2c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/a8f33a82df43.js, line 1312: OZ_SOURCE_BUFFER: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://www.instagram.com/static/bundles/es6/oz-player.main.js/46f7854b3ade.js, line 33: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Child 33516, MediaDecoderStateMachine #1] WARNING: Decoder=7feb1c771400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /PROJECT/firefox-85.0.1+linuxmint1+ulyssa/dom/media/MediaDecoderStateMachine.cpp:3465
+1613965462521	Marionette	INFO	Stopped listening on port 39527
+1613965632695	geckodriver	INFO	Listening on 127.0.0.1:42939
+1613965632699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexXJPK5"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613965635649	Marionette	INFO	Listening on port 32983
+1613965635737	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613965635754	Marionette	ERROR	[15] No reply from Marionette:Register
+1613965636324	Marionette	ERROR	[31] No reply from Marionette:Register
+1613965649061	Marionette	INFO	Stopped listening on port 32983
+1613965652015	geckodriver	INFO	Listening on 127.0.0.1:51507
+1613965652018	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekybYXI"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613965654642	Marionette	INFO	Listening on port 44583
+1613965654758	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613965654775	Marionette	ERROR	[15] No reply from Marionette:Register
+1613965655291	Marionette	ERROR	[31] No reply from Marionette:Register
+1613965659190	Marionette	ERROR	[33] No reply from Marionette:Register
+1613965661549	Marionette	ERROR	[35] No reply from Marionette:Register
+1613965667917	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1613965674687	Marionette	INFO	Stopped listening on port 44583
+1613965734887	geckodriver	INFO	Listening on 127.0.0.1:47313
+1613965734892	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCDmTNF"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1613965737549	Marionette	INFO	Listening on port 35413
+1613965737645	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613965737672	Marionette	ERROR	[15] No reply from Marionette:Register
+1613965743198	Marionette	ERROR	[31] No reply from Marionette:Register
+1613965751676	Marionette	INFO	Stopped listening on port 35413
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1614395836594	geckodriver	INFO	Listening on 127.0.0.1:38731
+1614395837593	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVAlihC"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614395841370	Marionette	INFO	Listening on port 44905
+1614395841436	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614395842726	Marionette	INFO	Stopped listening on port 44905
+1614481814140	geckodriver	INFO	Listening on 127.0.0.1:60965
+1614481815136	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1rync3"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is BR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614481819173	Marionette	INFO	Listening on port 33653
+1614481819297	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614481820883	Marionette	INFO	Stopped listening on port 33653

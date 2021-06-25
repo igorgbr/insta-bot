@@ -1,7 +1,12 @@
 .vscode
 .venv
+.logs
 __pycache__
 chromedriver
 helper.py
 data
 geckodriver
+data
+new_followers.txt
+new_followersB.txt
+users.txt
