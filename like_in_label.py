@@ -21,11 +21,11 @@ connection(driver)
 user = 'devprograma'
 driver.get(f'https://www.instagram.com/{user}/')
 
-# try:
-#     send_msg(user, driver)
-#     driver.get(f'https://www.instagram.com/{user}/')
-# except NoSuchElementException:
-#     pass
+try:
+    send_msg(user, driver)
+    driver.get(f'https://www.instagram.com/{user}/')
+except NoSuchElementException:
+    pass
 
 driver.find_element_by_class_name('_9AhH0').click()  # - Clicka na imagem
 

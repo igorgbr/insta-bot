@@ -1,12 +1,14 @@
 .vscode
 .venv
-.logs
+.log
 __pycache__
 chromedriver
 helper.py
 data
 geckodriver
 data
+geckodriver.log
 new_followers.txt
 new_followersB.txt
 users.txt
+logs

@@ -7,9 +7,11 @@ import time
 
 
 class Followers:
-    def __init__(self, driver):
+    def __init__(self, driver=None):
         self.driver = driver
+
         # ----------- descomentar se chamar o script followers ------
+
         # self.driver = webdriver.Chrome(
         #     executable_path=DRIVER_PATH_CHROME)
         # connection(self.driver)
@@ -30,7 +32,10 @@ class Followers:
         actionChain = webdriver.ActionChains(self.driver)
         for i in range(20):
             try:
-            # followersList.click()
+                # Adaptado do artigo de mpiersant
+                # Fonte: https://medium.com/analytics-vidhya/making-an-instagram-bot-using-selenium-and-python-ea94f217d0dd
+
+                # followersList.click()
                 self.driver.find_element_by_class_name(
                     'isgrP').click()  # - Clicka na DIV no lugar do LI
                 time.sleep(0.5)
@@ -41,8 +46,8 @@ class Followers:
 
                     listaLi.append(userLink)
 
-                lista_usuarios = [link.replace(
-                    'https://www.instagram.com/', '')[:-1] for link in listaLi]
+                lista_usuarios = set([link.replace(
+                    'https://www.instagram.com/', '')[:-1] for link in listaLi])
                 print(lista_usuarios)
                 print(len(lista_usuarios))
 
@@ -96,19 +101,22 @@ class Followers:
                 x = int(x)
             x = int(x)
 
-        if(listAtt[2] >= listAtt[1]):
-            print('Comparando listas de seguidores...')
-            self.driver.find_elements_by_css_selector(
-                'button')[btn_position].click()
-            time.sleep(1)
-            print('Seguindo usuario...')
+        try:
+            if(int(listAtt[2]) >= int(listAtt[1])):
+                print('Comparando listas de seguidores...')
+                self.driver.find_elements_by_css_selector(
+                    'button')[btn_position].click()
+                time.sleep(1)
+                print('Seguindo usuario...')
+        except ValueError:
+            ...
 
     def exitAndClose(self):
         self.driver.quit()
 
 
 # bot = Followers()
-# bot.getFollowers("pycodebr")
+# bot.getFollowers("brasilcode_")
 # bot.saveFollowers()
 
 # # bot.follow('karolcreates')

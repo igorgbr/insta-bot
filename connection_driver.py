@@ -4,6 +4,9 @@ import requests
 import time
 import sys
 
+# Adapatado da documentação
+# https://selenium-python.readthedocs.io/getting-started.html
+
 
 def connection(driver):
     try:
@@ -27,3 +30,5 @@ def connection(driver):
         print('excesso de requisição!')
         driver.close()
         sys.exit()
+    except Exception as e:
+        print(e)
