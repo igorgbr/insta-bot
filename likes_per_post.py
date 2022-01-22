@@ -7,6 +7,7 @@ from selenium.common.exceptions import (
     InvalidSessionIdException,
 )
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from helper import DRIVER_PATH_CHROME, DRIVER_PATH_FIREFOX, cor_terminal
 from connection_driver import connection
 from send_message import send_msg
@@ -102,11 +103,14 @@ for user in user_list:
     for i in range(1, 10):
         driver.implicitly_wait(0.4)
         try:
-            sleep(0.5)
-            unlike_element = driver.find_element(
-                By.CSS_SELECTOR, "[aria-label='Descurtir']"
+            sleep(2.5)
+            unlike_elements = driver.find_element(
+                By.XPATH, "//*[local-name()='svg' and @aria-label='Descurtir']"
             )
-            if not unlike_element:
+
+            # //*[local-name()='svg' and @aria-label='Descurtir']
+            print(unlike_elements)
+            if not unlike_elements:
                 try:
                     like_label = driver.find_element(By.CLASS_NAME, "fr66n")
                     like_label.click()
@@ -139,24 +143,24 @@ for user in user_list:
                         f'{cor_terminal["green"]} post {i} - não tinha like{cor_terminal["clean"]}'
                     )
                     like += 1
-                    driver.find_element(
-                        By.CSS_SELECTOR, "[aria-label='Avançar']"
-                    ).click()
+                    webdriver.ActionChains(driver).key_down(
+                        Keys.ARROW_RIGHT
+                    ).key_up(Keys.ARROW_RIGHT).perform()
                 except NoSuchElementException:
                     print("end")
                     break
             else:
                 try:
-                    driver.find_element_by_css_selector(
-                        "[aria-label='Avançar']"
-                    ).click()
+                    webdriver.ActionChains(driver).key_down(
+                        Keys.ARROW_RIGHT
+                    ).key_up(Keys.ARROW_RIGHT).perform()
                 except NoSuchElementException:
                     break
 
         except ElementClickInterceptedException:
-            driver.find_element(
-                By.CSS_SELECTOR, "[aria-label='Avançar']"
-            ).click()
+            webdriver.ActionChains(driver).key_down(
+                Keys.ARROW_RIGHT
+            ).key_up(Keys.ARROW_RIGHT).perform()
 
     seguindo = driver.find_elements_by_css_selector("[aria-label='Seguindo']")
     if "/p/" not in url and not seguindo:
