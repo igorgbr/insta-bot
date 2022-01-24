@@ -53,7 +53,7 @@ for user in user_list:
         print(
             f'{cor_terminal["cyan"]}processando usuário: {user}{cor_terminal["clean"]}'
         )
-        # send_msg(user, driver)
+        send_msg(user, driver)
         driver.get(f"https://www.instagram.com/{user}/")
         print("Mensagem enviada")
         sleep(1)
@@ -102,58 +102,51 @@ for user in user_list:
     like = 0
     for i in range(1, 10):
         driver.implicitly_wait(0.4)
-        sleep(2.5)
-
         try:
+            sleep(2.5)
             unlike_elements = driver.find_element(
                 By.XPATH, "//*[local-name()='svg' and @aria-label='Descurtir']"
             )
 
-            webdriver.ActionChains(driver).key_down(
-                Keys.ARROW_RIGHT
-            ).key_up(Keys.ARROW_RIGHT).perform()
+            # //*[local-name()='svg' and @aria-label='Descurtir']
 
-        # //*[local-name()='svg' and @aria-label='Descurtir']
-
-        except NoSuchElementException:
+        except Exception as e:
+            print("Aqui", e)
             try:
                 like_label = driver.find_element(By.CLASS_NAME, "fr66n")
                 like_label.click()
-                # driver.find_element_by_css_selector("[aria-label='Curtir']").click()
-                # driver.find_element_by_css_selector("[aria-label='Avançar']").click()
-                try:
-                    # excess_error = driver.find_element_by_class_name(
-                    #     "gxNyb"
-                    # ).text
-                    excess_error = driver.find_element(
-                        By.CLASS_NAME, "gxNyb"
-                    ).text
-                    print(excess_error)
-                    if excess_error:
-                        # lights.yellow_led_off()
-                        # lights.blue_led_blink()
-                        timeError = datetime.now()
-                        timeRegret = timeError + timedelta(seconds=300)
-                        print(f"Total de likes: {tot_like}")
-                        print(
-                            f'excesso de requisição {timeError.strftime("%H:%M")} volta em {timeRegret.strftime("%H:%M")}'
-                        )
-                        sleep(300)
-                        # lights.yellow_led_on()
+                # excess_error = driver.find_element_by_class_name(
+                #     "gxNyb"
+                # ).text
+                excess_error = driver.find_element(By.CLASS_NAME, "gxNyb").text
+                print(excess_error)
+                if excess_error:
+                    # lights.yellow_led_off()
+                    # lights.blue_led_blink()
+                    timeError = datetime.now()
+                    timeRegret = timeError + timedelta(seconds=300)
+                    print(f"Total de likes: {tot_like}")
+                    print(
+                        f'excesso de requisição {timeError.strftime("%H:%M")} volta em {timeRegret.strftime("%H:%M")}'
+                    )
+                    sleep(300)
+                    # lights.yellow_led_on()
 
-                except Exception:
-                    ...
-                # sleep(0.5)
-                print(
-                    f'{cor_terminal["green"]} post {i} - não tinha like{cor_terminal["clean"]}'
-                )
-                like += 1
+            except ElementClickInterceptedException:
                 webdriver.ActionChains(driver).key_down(
                     Keys.ARROW_RIGHT
                 ).key_up(Keys.ARROW_RIGHT).perform()
-            except NoSuchElementException:
-                print("end")
-                break
+
+            except Exception:
+                ...
+
+            print(
+                f'{cor_terminal["green"]} post {i} - não tinha like{cor_terminal["clean"]}'
+            )
+            like += 1
+            webdriver.ActionChains(driver).key_down(
+                Keys.ARROW_RIGHT
+            ).key_up(Keys.ARROW_RIGHT).perform()
 
     seguindo = driver.find_elements_by_css_selector("[aria-label='Seguindo']")
     if "/p/" not in url and not seguindo:
