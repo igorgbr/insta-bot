@@ -1,4 +1,7 @@
-from time import sleep, time
+import sys
+import os
+
+from time import sleep
 from followers import Followers
 from selenium import webdriver
 from selenium.common.exceptions import (
@@ -8,14 +11,25 @@ from selenium.common.exceptions import (
 )
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from helper import DRIVER_PATH_CHROME, DRIVER_PATH_FIREFOX, cor_terminal
+from helper import DRIVER_PATH_CHROME, cor_terminal
 from connection_driver import connection
-from send_message import send_msg
+
+# from send_message import send_msg
 from datetime import date, datetime, timedelta
 from connection_banco import insert_data
 from user_list import user_list
-import sys
-import os
+
+sys.path.insert(0, "helper/cli")
+from CLI import (
+    PROCESSANDO_USUARIO,
+    TOKEN_EXPIRADO,
+    USUARIO_N_TEM_POSTAGEM,
+    POST_N_TEM_LIKE,
+    FIM_DO_SCRIPT,
+    USUARIOS_VARRIDOS,
+    TOTAL_LIKES,
+    EXCESSO_DE_REQUISICOES,
+)
 
 # from arduino import ArduinoLeds
 import requests
@@ -44,18 +58,15 @@ for user in user_list:
     try:
         driver.get(f"https://www.instagram.com/{user}/?hl=pt-br")
     except InvalidSessionIdException:
-        print(f'{cor_terminal["red"]}TOKEN EXPIRADO{cor_terminal["clean"]}')
+        TOKEN_EXPIRADO()
         log.write(f"{user} - Token expirado\n")
         sys.exit()
 
     # -----------------------envia msg---------------------------------------
     try:
-        print(
-            f'{cor_terminal["cyan"]}processando usuário: {user}{cor_terminal["clean"]}'
-        )
+        PROCESSANDO_USUARIO(user)
         # send_msg(user, driver)
         driver.get(f"https://www.instagram.com/{user}/")
-        print("Mensagem enviada")
         sleep(1)
 
     except NoSuchElementException as e:
@@ -81,9 +92,7 @@ for user in user_list:
             driver.refresh()
 
         if "https://www.instagram.com/p/" not in url:
-            print(
-                f'{cor_terminal["yellow"]}Usuario não tem postagem{cor_terminal["clean"]}'
-            )
+            USUARIO_N_TEM_POSTAGEM()
 
         driver.find_element(
             By.CLASS_NAME, "_9AhH0"
@@ -109,9 +118,9 @@ for user in user_list:
                 By.XPATH, "//*[local-name()='svg' and @aria-label='Descurtir']"
             )
 
-            webdriver.ActionChains(driver).key_down(
+            webdriver.ActionChains(driver).key_down(Keys.ARROW_RIGHT).key_up(
                 Keys.ARROW_RIGHT
-            ).key_up(Keys.ARROW_RIGHT).perform()
+            ).perform()
 
         # //*[local-name()='svg' and @aria-label='Descurtir']
 
@@ -134,19 +143,17 @@ for user in user_list:
                         # lights.blue_led_blink()
                         timeError = datetime.now()
                         timeRegret = timeError + timedelta(seconds=300)
-                        print(f"Total de likes: {tot_like}")
-                        print(
-                            f'excesso de requisição {timeError.strftime("%H:%M")} volta em {timeRegret.strftime("%H:%M")}'
-                        )
+                        TOTAL_LIKES(tot_like)
+
+                        EXCESSO_DE_REQUISICOES(timeError, timeRegret)
                         sleep(300)
                         # lights.yellow_led_on()
 
                 except Exception:
                     ...
                 # sleep(0.5)
-                print(
-                    f'{cor_terminal["green"]} post {i} - não tinha like{cor_terminal["clean"]}'
-                )
+                POST_N_TEM_LIKE(i)
+
                 like += 1
                 webdriver.ActionChains(driver).key_down(
                     Keys.ARROW_RIGHT
@@ -178,12 +185,11 @@ for user in user_list:
     if "/p/" in url and like == 0 and not unlike_elements:
         # lights.yellow_led_off()
         # lights.blue_led_blink()
+        TOTAL_LIKES(tot_like)
+
         timeError = datetime.now()
         timeRegret = timeError + timedelta(seconds=900)
-        print(f"Total de likes: {tot_like}")
-        print(
-            f'excesso de requisição {timeError.strftime("%H:%M")} volta em {timeRegret.strftime("%H:%M")}'
-        )
+        EXCESSO_DE_REQUISICOES(timeError, timeRegret)
         sleep(900)
         # lights.yellow_led_on()
 
@@ -195,14 +201,11 @@ for user in user_list:
 
 
 # lights.yellow_led_off()
-print(f'{cor_terminal["green"]} Fim do SCRIPT{cor_terminal["clean"]}')
+FIM_DO_SCRIPT()
 tot_like += like
-print(
-    f'{cor_terminal["green"]} {len(user_list)} Usuarios varridos{cor_terminal["clean"]}'
-)
-print(
-    f'{cor_terminal["green"]} Total de likes: {tot_like}{cor_terminal["clean"]}'
-)
+
+USUARIOS_VARRIDOS(user_list)
+TOTAL_LIKES(tot_like)
 # lights.blue_led_blink()
 driver.close()
 sys.exit()
