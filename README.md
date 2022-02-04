@@ -4,4 +4,4 @@ Click automator for instagram using Selenium and Python 3
 
 
 -------------------
->>> Be Free <<<
+>>> Be Free
