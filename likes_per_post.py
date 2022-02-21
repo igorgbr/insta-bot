@@ -1,9 +1,12 @@
 import sys
 import os
+import requests
 
 from time import sleep
 from followers import Followers
+
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import (
     ElementClickInterceptedException,
     NoSuchElementException,
@@ -11,7 +14,8 @@ from selenium.common.exceptions import (
 )
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from helper import DRIVER_PATH_CHROME, cor_terminal
+
+from helper import DRIVER_PATH_CHROME
 from connection_driver import connection
 
 # from send_message import send_msg
@@ -32,7 +36,7 @@ from CLI import (
 )
 
 # from arduino import ArduinoLeds
-import requests
+
 
 # lights = ArduinoLeds()
 
@@ -48,7 +52,9 @@ try:
 except FileExistsError:
     pass
 
-driver = webdriver.Chrome(executable_path=DRIVER_PATH_CHROME)
+s = Service(DRIVER_PATH_CHROME)
+
+driver = webdriver.Chrome(service=s)
 connection(driver)
 
 today = date.today()
@@ -56,6 +62,7 @@ log = open(f"logs/{dir}/log - {today}", "a")
 
 for user in user_list:
     try:
+        PROCESSANDO_USUARIO(user)
         driver.get(f"https://www.instagram.com/{user}/?hl=pt-br")
     except InvalidSessionIdException:
         TOKEN_EXPIRADO()
@@ -63,19 +70,19 @@ for user in user_list:
         sys.exit()
 
     # -----------------------envia msg---------------------------------------
-    try:
-        PROCESSANDO_USUARIO(user)
-        # send_msg(user, driver)
-        driver.get(f"https://www.instagram.com/{user}/")
-        sleep(1)
+    # try:
+    #     PROCESSANDO_USUARIO(user)
+    #     # send_msg(user, driver)
+    #     driver.get(f"https://www.instagram.com/{user}/")
+    #     sleep(1)
 
-    except NoSuchElementException as e:
-        print(e)
-        pass
+    # except NoSuchElementException as e:
+    #     print(e)
+    #     pass
 
-    except ElementClickInterceptedException as e:
-        print(e)
-        pass
+    # except ElementClickInterceptedException as e:
+    #     print(e)
+    #     pass
     # ----------------------------------------------------------------------
     follow = Followers(driver)
     try:
