@@ -1,3 +1,4 @@
+from instapy import InstaPy
 from selenium.webdriver.common.keys import Keys
 from helper import PASSWORD, LOGIN
 import requests
@@ -14,6 +15,7 @@ def connection(driver):
         # time.sleep(0.5)
         # print(response.status_code)
         # response.raise_for_status()
+        
         driver.get("http://www.instagram.com.br")
 
         driver.implicitly_wait(5)

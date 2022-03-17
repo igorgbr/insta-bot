@@ -1,5 +1,6 @@
 from main import instaBot
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from connection_driver import connection
 from helper import DRIVER_PATH_CHROME, DRIVER_PATH_FIREFOX
@@ -11,12 +12,11 @@ class Followers:
         self.driver = driver
 
         # ----------- descomentar se chamar o script followers ------
-
-        # self.driver = webdriver.Chrome(
-        #     executable_path=DRIVER_PATH_CHROME)
-        # connection(self.driver)
-
     def getFollowers(self, username):
+        s = Service(DRIVER_PATH_CHROME)
+        self.driver = webdriver.Chrome(service=s)
+        connection(self.driver)
+
         time.sleep(2)
         self.driver.get(f"https://www.instagram.com/{username}")
         time.sleep(1)
@@ -116,7 +116,7 @@ class Followers:
 
 
 # bot = Followers()
-# bot.getFollowers("brasilcode_")
+# bot.getFollowers("ferasdatecnologia")
 # bot.saveFollowers()
 
 # # bot.follow('karolcreates')

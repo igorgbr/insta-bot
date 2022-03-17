@@ -1,4 +1,4 @@
-listFollowersFile = open('new_followers.txt', 'r')
+listFollowersFile = open('new_followers.txt', 'r+')
 listFollowersFileB = open('new_followersB.txt', 'r')
 
 newFollowersA = sorted(set([x.replace('\n', '') for x in listFollowersFile]))

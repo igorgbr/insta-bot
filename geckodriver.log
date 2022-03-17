@@ -1128,3 +1128,18 @@ JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 154: TypeError
 1627938014770	Marionette	INFO	Stopped listening on port 45139
 Invalid port. Exiting...
 Invalid port. Exiting...
+1645534574706	geckodriver	INFO	Listening on 127.0.0.1:60053
+1645534575217	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49545" "-no-remote" "-profile" "/tmp/rust_mozprofileshG9Hp"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1645534575645	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileshG9Hp/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49545/devtools/browser/2c47350a-c76f-4ccb-8ca0-cd37f69479a9
+1645534576665	Marionette	INFO	Listening on port 39329
+1645534576731	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645534625512	Marionette	INFO	Stopped listening on port 39329
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

@@ -1,6 +1,7 @@
 import sys
 import os
 import requests
+import random
 
 from time import sleep
 from followers import Followers
@@ -116,7 +117,8 @@ for user in user_list:
 
     # ------------------------ like posts ----------------------------------
     like = 0
-    for i in range(1, 10):
+
+    for i in range(1, random.randint(2, 9)):
         driver.implicitly_wait(0.4)
         sleep(2.5)
 
